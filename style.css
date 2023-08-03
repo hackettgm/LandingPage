@@ -5,27 +5,43 @@
 body{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: fit-content;
 }
+
+
 .header,.section1{
     background-color: #1f2937;
     color: white;
-    padding:20px 150px;
+    padding:30px 20px 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: fit-content;
 }
 
+
+
 .section1{
-    min-height: 300px;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .section1 h3{
     font-size: 48px;
-    margin: 10px;
+    margin: 10px 0px;
 }
-.section1 div, button{
-    margin: 10px;
-}
+
 .left-text{
-    padding: 10px;
+    padding: 0px;
+    padding-right: 50px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
 }
 
 .section2{
@@ -34,36 +50,50 @@ body{
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    padding:20px 150px ;
+    padding:20px 100px ;
 }
 
 .section2 h3{
     font-size: 36px;
     font-weight: bolder;
+    text-align:center;
 }
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     height: 200px;
     width: 200px;
     border: 5px solid #3882f6;
     border-radius: 10px;
-    margin: 10px;
+    margin: 30px 10px;
 }
 .img-text{
     margin-top: 200px;
 }
-.header,.section1{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.logo{
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .right-links a{
-    padding: 5px;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.right-links{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 5px;
+    flex-wrap: nowrap;
 }
 
 .img{
@@ -72,6 +102,7 @@ body{
     width: 400px;
     height: 200px;
     flex-shrink: 0;
+    width: fit-content;
 }
 
 .quote{
@@ -84,23 +115,63 @@ body{
     color: white;
     display: flex;
     flex-direction: row;
+    padding: 30px 20px;
+    border:5px solid #3882f6;
+    border-radius: 10px;
+    min-width: fit-content;
+    justify-self: center;
 }
 
 button{
     background-color: #3882f6;
     border:5px solid #3882f6;
     border-radius: 10px;
+    margin: 10px 0px;
+    max-width: 80px;
 }
 .call-to-action button{
     border:2px solid white;
     border-radius: 5px; 
-    color: white
+    color: white;
+    max-width: 100px;
+    flex-shrink: 1;
+    white-space: nowrap;
 }
 
-.logo{
-    margin-left: 30px;
+.card .placeholder{
+    align-self: center;
+}
+.action-title{
+    font-size: 24px;
+    font-weight: bolder;
 }
 
-.right-links{
-    margin-right: 20px;
+.action-text{
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    white-space: nowrap;
+}
+
+.contain-call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px
+}
+
+footer{text-align: center;}
+
+.quote blockquote{
+    font-size: 34px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+}
+
+.quote{
+    text-align: right;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
 }
